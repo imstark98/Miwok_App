@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Find the view that shows numbers category
         TextView numbers = (TextView) findViewById(R.id.numbers);
-
+        assert numbers != null;
         //Set a clicklistener on that view
         numbers.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Find the view that shows phrases category
         TextView phrases = (TextView) findViewById(R.id.phrases);
-
+        assert phrases != null;
         //Set a clicklistener on that view
         phrases.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Find the view that shows phrases category
         TextView colors = (TextView) findViewById(R.id.colors);
-
+        assert colors != null;
         //Set a clicklistener on that view
         colors.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Find the view that shows family category
         TextView family = (TextView) findViewById(R.id.family);
-
+        assert family != null;
         //Set a clicklistener on that view
         family.setOnClickListener(new View.OnClickListener() {
             @Override
