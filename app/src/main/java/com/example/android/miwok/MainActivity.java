@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Create an intent to open the FamilyActivity
-                Intent familyIntent = new Intent(MainActivity.this,NumbersActivity.class);
+                Intent familyIntent = new Intent(MainActivity.this,FamilyActivity.class);
 
                 //Start the activity
                 startActivity(familyIntent);
