@@ -14,7 +14,7 @@ public class Word {
     private  String mMiwokTranslation;
 
     /** Image Resource ID for that word */
-    private int mImageResourceId;
+    private int mImageResourceId = -1;
 
     public Word (String defaultTranslation, String miwokTranslation, int imageResourceId)
     {
@@ -47,5 +47,9 @@ public class Word {
 
     public int getmImageResourceId() {
         return mImageResourceId;
+    }
+
+    public boolean hasImage(){
+        return mImageResourceId!=-1;
     }
 }
