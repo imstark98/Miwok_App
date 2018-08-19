@@ -16,18 +16,23 @@ public class Word {
     /** Image Resource ID for that word */
     private int mImageResourceId = -1;
 
-    public Word (String defaultTranslation, String miwokTranslation, int imageResourceId)
+    /** Audio Resource ID for that word */
+    private int mAudioResourceId;
+
+    public Word (String defaultTranslation, String miwokTranslation, int imageResourceId, int audioResourceId)
     {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceId = imageResourceId;
+        mAudioResourceId = audioResourceId;
     }
 
     // For the phrase activity
-    public Word(String defaultTranslation, String miwokTranslation)
+    public Word(String defaultTranslation, String miwokTranslation, int audioResourceId)
     {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        mAudioResourceId = audioResourceId;
     }
 
     /**
@@ -51,5 +56,9 @@ public class Word {
 
     public boolean hasImage(){
         return mImageResourceId!=-1;
+    }
+
+    public int getmAudioResourceId(){
+        return mAudioResourceId;
     }
 }
