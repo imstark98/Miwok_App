@@ -37,7 +37,7 @@ public class NumbersActivity extends AppCompatActivity {
 
         // Create an custom {@link WordAdapter} by extending ArrayAdapter, whose data source is a list of two strings. The
         // adapter knows how to create layouts for  each item in the list. using the
-        WordAdapter itemsAdapter = new WordAdapter(this,words);
+        WordAdapter itemsAdapter = new WordAdapter(this,words,R.color.category_numbers);
 
         // Find the ListView object in the view hierarchy of the Activity.
         // There should be a ListView with the view ID called list, which is declared in the
